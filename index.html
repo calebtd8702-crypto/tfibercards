@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Fiber Business Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card" id="card">
+            <!-- Front Side -->
+            <div class="card-face card-front">
+                <div class="card-content">
+                    <div class="logo-container front-logo">
+                        <img src="logo.png" alt="T-Fiber Logo" class="brand-logo">
+                    </div>
+
+                    <div class="profile-photo">
+                        <img src="profile.png" alt="Profile Photo" class="photo">
+                    </div>
+
+                    <h1 class="name">Caleb Dicken</h1>
+                    <p class="title">T-Fiber Sales Representative</p>
+                    <p class="tagline">Fast. Reliable. Fiber-strong.</p>
+
+                    <div class="contact-info">
+                        <a href="tel:5157079550" class="contact-item">
+                            <span class="icon">📞</span>
+                            <span>515-707-9550</span>
+                        </a>
+                        <a href="mailto:caleb.dicken1@tmobile.com" class="contact-item">
+                            <span class="icon">✉️</span>
+                            <span>caleb.dicken1@tmobile.com</span>
+                        </a>
+                    </div>
+
+                    <a href="caleb-dicken.vcf" download="caleb-dicken.vcf" class="add-contact-btn">
+                        <span class="icon">👤</span> Add to Contacts
+                    </a>
+
+                    <div class="flip-hint" onclick="flipCard()">
+                        <span>Click to flip</span>
+                        <span class="arrow">↻</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Side -->
+            <div class="card-face card-back">
+                <div class="card-content">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="T-Fiber Logo" class="brand-logo">
+                    </div>
+
+                    <h2 class="section-title">Fiber Founders Club</h2>
+
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="bullet">✔</span>
+                            <span><strong>2 Gigs</strong> for just <strong>$70/mo</strong> w/AutoPay</span>
+                        </li>
+                        <li>
+                            <span class="bullet">✔</span>
+                            <span><strong>10-Year Price Guarantee</strong> — lock in your rate</span>
+                        </li>
+                        <li>
+                            <span class="bullet">✔</span>
+                            <span>Symmetrical upload/download speeds, low latency</span>
+                        </li>
+                        <li>
+                            <span class="bullet">✔</span>
+                            <span>Professional installation & trusted T-Mobile support</span>
+                        </li>
+                    </ul>
+
+                    <div class="back-contact">
+                        <a href="https://fiber.t-mobile.com" target="_blank" class="contact-item">
+                            <span class="icon">🌐</span>
+                            <span>Fiber.T-Mobile.com</span>
+                        </a>
+                    </div>
+
+                    <div class="qr-section">
+                        <div id="qrcode"></div>
+                        <p class="qr-label">Scan to save contact</p>
+                    </div>
+
+                    <div class="cta-box">
+                        <p class="cta-title">Ready to get connected?</p>
+                        <p class="cta-text">Call or text me — I'll help you check availability & get started.</p>
+                    </div>
+
+                    <div class="flip-hint" onclick="flipCard()">
+                        <span>Click to flip back</span>
+                        <span class="arrow">↻</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function flipCard() {
+            const card = document.getElementById('card');
+            card.classList.toggle('flipped');
+        }
+
+        // Generate QR code with vCard data
+        const vCardData = `BEGIN:VCARD
+VERSION:3.0
+N:Dicken;Caleb;;;
+FN:Caleb Dicken
+ORG:T-Mobile;T-Fiber
+TITLE:T-Fiber Sales Representative
+TEL;TYPE=CELL:+1-515-707-9550
+EMAIL:caleb.dicken1@tmobile.com
+URL:https://www.t-mobile.com/fiber
+NOTE:Fast. Reliable. Fiber-strong.
+END:VCARD`;
+
+        QRCode.toCanvas(document.createElement('canvas'), vCardData, {
+            width: 120,
+            margin: 1,
+            color: {
+                dark: '#E20074',
+                light: '#FFFFFF'
+            }
+        }, function (error, canvas) {
+            if (!error) {
+                document.getElementById('qrcode').appendChild(canvas);
+            }
+        });
+    </script>
+</body>
+
+</html>
