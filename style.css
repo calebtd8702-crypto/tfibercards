@@ -150,34 +150,24 @@ body {
 
 /* Add to Contacts Button */
 .add-contact-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     color: var(--brand-white);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 10px 18px;
-    background: #D85035;
-    border-radius: 8px;
-    margin-top: 16px;
-    transition: all 0.2s ease;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 20px;
+    background: rgba(226, 0, 116, 0.3);
+    border: 1px solid var(--brand-magenta);
+    border-radius: 20px;
+    margin-top: 12px;
+    transition: all 0.3s ease;
 }
 
 .add-contact-btn:hover {
-    background: #C44428;
-}
-
-.add-contact-btn .plus {
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.add-contact-btn .dropdown {
-    font-size: 10px;
-    margin-left: 4px;
-    opacity: 0.8;
+    background: var(--brand-magenta);
 }
 
 /* QR Code Section */
