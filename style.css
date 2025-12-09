@@ -227,6 +227,9 @@ body {
 
 .front-logo {
     margin-bottom: 16px;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
 }
 
 .front-logo .brand-logo {
@@ -236,7 +239,13 @@ body {
 .brand-logo {
     max-width: 160px;
     height: auto;
-    filter: brightness(1.1);
+}
+
+.card-back .logo-container {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 .section-title {
