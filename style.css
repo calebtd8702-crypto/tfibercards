@@ -55,11 +55,11 @@ body {
 }
 
 .card-front {
-    background: linear-gradient(180deg, var(--card-bg-start) 0%, var(--card-bg-end) 100%);
+    background: var(--brand-black);
 }
 
 .card-back {
-    background: linear-gradient(180deg, var(--card-bg-end) 0%, var(--card-bg-start) 100%);
+    background: var(--brand-black);
     transform: rotateY(180deg);
 }
 
