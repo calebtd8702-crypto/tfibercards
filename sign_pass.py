@@ -103,6 +103,17 @@ if __name__ == '__main__':
                 "photo": "ben_headshot.jpg",
                 "title": "TV Technician"
             }
+        },
+        {
+            "filename": "BreyerEllison",
+            "data": {
+                "name": "Breyer Ellison",
+                "phone": "641-530-9499",
+                "email": "breyer.ellison1@t-mobile.com",
+                "vcard_n": "Ellison;Breyer;;;",
+                "vcard_fn": "Breyer Ellison",
+                "photo": "breyer_headshot.png"
+            }
         }
     ]
 
