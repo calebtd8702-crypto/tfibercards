@@ -114,6 +114,72 @@ if __name__ == '__main__':
                 "vcard_fn": "Breyer Ellison",
                 "photo": "breyer_headshot.png"
             }
+        },
+        {
+            "filename": "ColinOttoson",
+            "data": {
+                "name": "Colin Ottoson",
+                "phone": "319-499-7987",
+                "email": "colin.ottoson1@t-mobile.com",
+                "vcard_n": "Ottoson;Colin;;;",
+                "vcard_fn": "Colin Ottoson",
+                "photo": "colin_headshot.jpg"
+            }
+        },
+        {
+            "filename": "NoahHowerton",
+            "data": {
+                "name": "Noah Howerton",
+                "phone": "816-341-8439",
+                "email": "noah.howerton1@t-mobile.com",
+                "vcard_n": "Howerton;Noah;;;",
+                "vcard_fn": "Noah Howerton",
+                "photo": "noah_headshot.jpg"
+            }
+        },
+        {
+            "filename": "NateAugspurger",
+            "data": {
+                "name": "Nate Augspurger",
+                "phone": "515-218-4531",
+                "email": "nathan.augspurger1@t-mobile.com",
+                "vcard_n": "Augspurger;Nate;;;",
+                "vcard_fn": "Nate Augspurger",
+                "photo": "nate_headshot.jpg"
+            }
+        },
+        {
+            "filename": "KenleyStatkiewicz",
+            "data": {
+                "name": "Kenley Statkiewicz",
+                "phone": "419-379-5062",
+                "email": "kenley.statkiewicz1@t-mobile.com",
+                "vcard_n": "Statkiewicz;Kenley;;;",
+                "vcard_fn": "Kenley Statkiewicz",
+                "photo": "kenley_headshot.jpg"
+            }
+        },
+        {
+            "filename": "MarqelleBirchfield",
+            "data": {
+                "name": "Marqelle Birchfield",
+                "phone": "419-721-8612",
+                "email": "marqelle.birchfield1@t-mobile.com",
+                "vcard_n": "Birchfield;Marqelle;;;",
+                "vcard_fn": "Marqelle Birchfield",
+                "photo": "marqelle_headshot.jpg"
+            }
+        },
+        {
+            "filename": "ChrisDicken",
+            "data": {
+                "name": "Chris Dicken",
+                "phone": "515-664-4900",
+                "email": "christopher.dicken1@t-mobile.com",
+                "vcard_n": "Dicken;Chris;;;",
+                "vcard_fn": "Chris Dicken",
+                "photo": "chris_headshot.png"
+            }
         }
     ]
 

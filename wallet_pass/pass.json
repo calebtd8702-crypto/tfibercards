@@ -14,26 +14,26 @@
       {
         "key": "name",
         "label": "Name",
-        "value": "Ben Elfvin"
+        "value": "Chris Dicken"
       }
     ],
     "secondaryFields": [
       {
         "key": "title",
         "label": "Title",
-        "value": "TV Technician"
+        "value": "Territory Manager"
       }
     ],
     "auxiliaryFields": [
       {
         "key": "phone",
         "label": "Mobile",
-        "value": "515-664-5937"
+        "value": "515-664-4900"
       },
       {
         "key": "email",
         "label": "Email",
-        "value": "belfvin@gmail.com"
+        "value": "christopher.dicken1@t-mobile.com"
       }
     ],
     "backFields": [
@@ -56,7 +56,7 @@
   },
   "barcode": {
     "format": "PKBarcodeFormatQR",
-    "message": "BEGIN:VCARD\nVERSION:3.0\nN:Elfvin;Ben;;;\nFN:Ben Elfvin\nORG:T-Mobile;T-Fiber\nTITLE:T-Fiber TV Technician\nTEL;TYPE=CELL:515-664-5937\nEMAIL:belfvin@gmail.com\nURL:https://www.t-mobile.com/fiber\nEND:VCARD",
+    "message": "BEGIN:VCARD\nVERSION:3.0\nN:Dicken;Chris;;;\nFN:Chris Dicken\nORG:T-Mobile;T-Fiber\nTITLE:T-Fiber Territory Manager\nTEL;TYPE=CELL:515-664-4900\nEMAIL:christopher.dicken1@t-mobile.com\nURL:https://www.t-mobile.com/fiber\nEND:VCARD",
     "messageEncoding": "iso-8859-1",
     "altText": "Scan for Contact Info"
   }
